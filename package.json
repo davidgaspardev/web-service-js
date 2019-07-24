@@ -1,0 +1,19 @@
+{
+  "name": "web-service",
+  "version": "1.0.0",
+  "description": "Web Service RESTful com Node.js e Restify",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ./"
+  },
+  "keywords": [
+    "RESTful",
+    "Restify",
+    "http",
+    "service",
+    "communication",
+    "database"
+  ],
+  "author": "David Gaspar",
+  "license": "ISC"
+}
