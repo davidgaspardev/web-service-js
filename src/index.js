@@ -1,8 +1,6 @@
 /**
  * Web Service RESTful
  */
-const restify = require('restify');
-
-const server = restify.createServer();
+const server = require('./server');
 
 server.listen('3456');
