@@ -4,10 +4,15 @@
 
 // Importing restify package
 const restify = require('restify');
+const cors = require('./cors');
 const routes = require('../http/routes');
 
 // Creating the server
 const server = restify.createServer();
+
+// Implant cors (middleware)
+server.pre(cors.preflight);
+server.use(cors.actual);
 
 // Linking routes
 routes(server);
