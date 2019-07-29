@@ -12,7 +12,8 @@
     "http",
     "service",
     "communication",
-    "database"
+    "database",
+    "web"
   ],
   "author": "David Gaspar",
   "license": "ISC",

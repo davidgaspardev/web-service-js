@@ -13,6 +13,7 @@ const server = restify.createServer();
 // Implant cors (middleware)
 server.pre(cors.preflight);
 server.use(cors.actual);
+server.use(restify.plugins.bodyParser({ mapParams: true }));
 
 // Linking routes
 routes(server);
